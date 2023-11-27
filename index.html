@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+    <script src="./src/js/index.js" type="module" defer></script>
+    <title>Угадай число</title>
+</head>
+
+<body>
+    <h1>Игра «Угадай число»</h1>
+    <div class="game">
+        <form id="game">
+            <input type="number" name="guess" id="guess">
+            <button type="submit">
+                <img src="./src/assets/img/guess.svg">
+                Угадать
+            </button>
+            <button type="button" class="game__button-option" id="new-game">
+                <img src="./src/assets/img/newGame-btn.svg">
+                Новая игра
+            </button>
+        </form>
+        <div class="game__hints">
+            <p id="less-or-more"></p>
+            <p id="hint"></p>
+            <p id="warning"></p>
+            <p id="attempts"></p>
+            <h3 class="game__final" id="final"></h3>
+        </div>
+        <div class="game__control">
+            <form class="game__options">
+                <h2>Выбери диапазон</h2>
+                <label>
+                    От:
+                    <input id="min" name="min" type="number" value="1">
+                </label>
+                <label>
+                    До:
+                    <input id="max" name="max" type="number" value="100">
+                </label>
+                <button type="submit" id="select-numbers">Выбрать</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
